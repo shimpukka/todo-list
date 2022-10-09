@@ -1,0 +1,26 @@
+<%- include('header') -%>
+
+    <div class="container my-5">
+        <h1 class="mb-3"><%= category %> ToDo List</h1>
+        <p>
+            <%= description %>
+        </p>
+        <ul class="list-group container-sm mb-5">
+            <% for (var i=0; i< items.length; i++){ %>
+                <li class="list-group-item"><%= items[i] %></li>
+            <% } %>
+        </ul>
+
+        <form class="container-sm" method="post" action="/">
+            <div class="input-group mb-3">
+                <input type="text" name="newItem" class="form-control" placeholder="Add new item" aria-label="New item" required>
+                <input type="hidden" name="category" value=<%= category %>>
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit">Add</button>
+                </div>
+            </div>
+        </form>
+          
+    </div>
+
+<%- include('footer') -%>
