@@ -7,7 +7,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: false })); // for handling post request
 app.use(express.static('public'));
 
-const items = ['Buy Coffe', 'Meditate'];
+const items = ['Drink coffe', 'Meditate'];
 const workItems = [];
 
 
