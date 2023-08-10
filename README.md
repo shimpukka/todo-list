@@ -19,18 +19,18 @@ Follow these steps to get the application up and running:
    ```
 
 2. Navigate to the project directory:
- ```bash
+   ```bash
    cd todo-list
    ```
 
 3. Install the dependencies using npm:
- ```bash
-  npm install
+   ```bash
+   npm install
    ```
 
 4. Run the application using the following command:
- ```bash
-  node app.js
+   ```bash
+   node app.js
    ```
 
 The application should now be running and accessible at http://localhost:3000.
